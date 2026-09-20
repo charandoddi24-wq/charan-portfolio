@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Rama Sri Charan Doddi — Computer Science (Data Science) undergraduate and backend/full-stack developer.">
+  <title>Rama Sri Charan Doddi | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
+
+  <header class="nav">
+    <a class="brand" href="#home">Charan Doddi<span>.</span></a>
+    <nav id="site-nav" aria-label="Primary"></nav>
+    <div class="nav-tools">
+      <button class="theme-toggle" type="button" aria-label="Toggle color theme">◐</button>
+      <button class="menu" type="button" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-orb orb-one"></div>
+      <div class="hero-orb orb-two"></div>
+      <div class="hero-copy reveal" id="hero-copy"></div>
+      <div class="hero-card reveal delay" id="hero-card"></div>
+    </section>
+
+    <section id="about" class="section about"></section>
+
+    <section id="skills" class="section skills"></section>
+
+    <section id="projects" class="section projects"></section>
+
+    <section id="education" class="section education"></section>
+
+    <section id="contact" class="contact"></section>
+  </main>
+
+  <footer id="site-footer"></footer>
+
+  <dialog class="project-dialog" id="project-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-inner">
+      <button class="dialog-close" type="button" aria-label="Close project details">×</button>
+      <div id="dialog-body"></div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
